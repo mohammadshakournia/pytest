@@ -32,7 +32,7 @@ http://127.0.0.1:8000
 Interactive API documentation:
 http://127.0.0.1:8000/docs
 
-API Endpoints
+## API Endpoints
 Create a task
 POST /tasks
 
@@ -56,26 +56,26 @@ GET /tasks/{task_id}
 Example:
 GET /tasks/1
 
-Run Tests
+## Run Tests
 Run all tests with:
 pytest -v
 
-Project Files
-app/main.py
+## Project Files
+### app/main.py
 Contains the main application code. It defines the data models, API endpoints, validation rules, and temporary in-memory storage.
-app/__init__.py
+### app/__init__.py
 Marks the app folder as a Python package.
-tests/test_tasks_api.py
+### tests/test_tasks_api.py
 Contains the automated tests for the API. These tests check task creation, task retrieval, validation errors, and missing tasks.
-tests/conftest.py
+### tests/conftest.py
 Contains shared test setup. It creates the test client and resets the stored tasks before each test.
-tests/__init__.py
+### tests/__init__.py
 Marks the tests folder as a Python package.
-requirements.txt
+### requirements.txt
 Contains the Python packages required to run the application and its tests.
-pytest.ini
+### pytest.ini
 Contains pytest configuration, such as the location and naming format of test files.
-.gitignore
+### .gitignore
 Lists files and folders that should not be committed to Git, such as virtual environments and Python cache files.
-Notes
+## Notes
 This project stores tasks in memory. The data will be lost when the application stops. The main purpose of this project is to demonstrate API development and automated testing with pytest.
